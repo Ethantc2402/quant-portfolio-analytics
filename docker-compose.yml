@@ -1,0 +1,29 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:16
+    container_name: qpa-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: qpa_user
+      POSTGRES_PASSWORD: qpa_password
+      POSTGRES_DB: qpa_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: qpa-pgadmin
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@local.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:

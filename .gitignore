@@ -1,0 +1,18 @@
+# Python
+*.pyc
+__pycache__/
+.venv/
+
+# Node / React
+node_modules/
+dist/
+
+# OS junk
+.DS_Store
+
+# Env vars
+.env
+*.env
+
+# Docker volumes (if any)
+postgres_data/
