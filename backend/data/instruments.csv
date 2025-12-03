@@ -1,0 +1,4 @@
+ticker,name,asset_class,currency,sector,issuer
+AAPL,Apple Inc,Equity,USD,Technology,Apple Inc
+MSFT,Microsoft Corp,Equity,USD,Technology,Microsoft Corp
+SPY,SPDR S&P 500 ETF,Equity,USD,ETF,State Street

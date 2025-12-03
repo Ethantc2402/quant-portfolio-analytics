@@ -1,0 +1,4 @@
+portfolio_name,ticker,trade_datetime,side,quantity,price,commission,broker,trader
+Tech Growth,AAPL,2024-01-02T14:30:00,BUY,100,182.10,5.00,BrokerA,Trader1
+Tech Growth,MSFT,2024-01-02T14:31:00,BUY,50,389.20,5.00,BrokerA,Trader1
+US Large Cap,SPY,2024-01-02T15:00:00,BUY,100,470.50,7.50,BrokerB,Trader2

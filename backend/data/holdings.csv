@@ -1,0 +1,4 @@
+portfolio_name,ticker,date,quantity,market_value,weight
+Tech Growth,AAPL,2024-01-02,100,18210,0.5
+Tech Growth,MSFT,2024-01-02,50,19460,0.5
+US Large Cap,SPY,2024-01-02,100,47050,1.0
