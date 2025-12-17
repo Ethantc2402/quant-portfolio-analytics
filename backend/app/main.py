@@ -5,12 +5,16 @@ from sqlalchemy import text
 from .init_db import init_db
 from .db import SessionLocal
 
+from app.routers import analytics
+
 
 app = FastAPI(
     title="Quant Portfolio Analytics API",
     version="0.1.0",
     description="Backend API for a full-stack quant portfolio analytics platform.",
 )
+
+app.include_router(analytics.router, prefix="/api", tags=["analytics"])
 
 origins = [
     "http://localhost:3000",
